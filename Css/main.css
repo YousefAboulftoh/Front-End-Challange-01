@@ -106,7 +106,7 @@ body {
     }
 }
 
-.header .box a {
+.header .boxs a {
     text-decoration: none;
     background-color: hsl(0, 0%, 95%);
     padding: 15px 35px;
@@ -117,15 +117,15 @@ body {
     transition: 0.3s;
 }
 
-.header .boxs .box:first-child a {
+.header .box:first-child a {
     color: hsl(31, 77%, 52%);
 }
 
-.header .boxs .box:nth-child(2) a {
+.header .box:nth-child(2) a {
     color: hsl(184, 100%, 22%);
 }
 
-.header .boxs .box:last-child a {
+.header .box:last-child a {
     color: hsl(179, 100%, 13%);
 }
 

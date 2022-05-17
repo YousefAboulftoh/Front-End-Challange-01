@@ -1,0 +1,136 @@
+/* Start Global Rules */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 15px
+}
+
+:root {
+    --main-raduis: 7px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 100px auto;
+}
+
+@media (max-width:375px) {
+    .container {
+        width: 350px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* End Global Rules */
+
+
+/* Start Css */
+
+.header .boxs {
+    display: flex;
+}
+
+.header .container .boxs .box {
+    padding: 20px 20px 20px 50px;
+}
+
+.header .container .boxs .box:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: var(--main-raduis);
+    border-bottom-left-radius: var(--main-raduis);
+}
+
+.header .container .boxs .box:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.header .container .boxs .box:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: var(--main-raduis);
+    border-bottom-right-radius: var(--main-raduis);
+}
+
+.header .boxs .box .svg {
+    margin-bottom: 20px;
+}
+
+.header .box .text h2 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header .box .text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+}
+
+@media (min-width:375px) and (max-width:650px) {
+    .boxs {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .header .text p {
+        padding-right: 50px;
+    }
+    .header .boxs .box:last-child>button {
+        margin-top: 100px;
+    }
+}
+
+.header .box button {
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header .boxs .box:first-child>button {
+    color: hsl(31, 77%, 52%);
+}
+
+.header .boxs .box:nth-child(2)>button {
+    color: hsl(184, 100%, 22%);
+}
+
+.header .boxs .box:last-child>button {
+    color: hsl(179, 100%, 13%);
+    margin-top: 125px;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+.attribution a {
+    font-weight: bold;
+    color: black;
+}

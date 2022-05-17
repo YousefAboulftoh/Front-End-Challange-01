@@ -30,6 +30,12 @@ body {
     }
 }
 
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
 @media (min-width:992px) {
     .container {
         width: 970px;
@@ -87,6 +93,7 @@ body {
 .header .box .text p {
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 2;
+    margin-bottom: 100px;
 }
 
 @media (min-width:375px) and (max-width:650px) {
@@ -97,33 +104,35 @@ body {
     .header .text p {
         padding-right: 50px;
     }
-    .header .boxs .box:last-child>button {
-        margin-top: 100px;
-    }
 }
 
-.header .box button {
-    margin-top: 100px;
+.header .box a {
+    text-decoration: none;
     background-color: hsl(0, 0%, 95%);
-    border-radius: 30px;
     padding: 15px 35px;
-    font-family: 'Lexend Deca', sans-serif;
-    border: none;
+    border-radius: 30px;
+    display: block;
+    width: fit-content;
     font-size: 20px;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-.header .boxs .box:first-child>button {
+.header .boxs .box:first-child a {
     color: hsl(31, 77%, 52%);
 }
 
-.header .boxs .box:nth-child(2)>button {
+.header .boxs .box:nth-child(2) a {
     color: hsl(184, 100%, 22%);
 }
 
-.header .boxs .box:last-child>button {
+.header .boxs .box:last-child a {
     color: hsl(179, 100%, 13%);
-    margin-top: 125px;
+}
+
+.header .boxs a:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
 }
 
 .attribution {
